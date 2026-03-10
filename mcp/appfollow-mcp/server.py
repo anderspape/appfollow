@@ -12,6 +12,7 @@ from mcp.server.fastmcp import FastMCP
 APPFOLLOW_BASE_URL = "https://api.appfollow.io/api/v2/reviews"
 APPFOLLOW_RATINGS_HISTORY_URL = "https://api.appfollow.io/api/v2/meta/ratings/history"
 DEFAULT_EXT_ID = "1480220328"
+DEFAULT_COLLECTION_NAME = "my-first-workspace"
 
 mcp = FastMCP(
     name="appfollow-reviews-mcp",
@@ -172,8 +173,9 @@ def get_appfollow_ratings_history(
     from_date: str,
     to_date: str,
     ext_id: str = DEFAULT_EXT_ID,
+    collection_name: str | None = DEFAULT_COLLECTION_NAME,
     country: str | None = None,
-    store: str | None = None,
+    store: str = "as",
     version: str | None = None,
     period: str = "daily",
     score_type: str = "total",
@@ -196,11 +198,12 @@ def get_appfollow_ratings_history(
         "score_type": score_type,
         "offset": offset,
         "limit": limit,
+        "store": store,
     }
+    if collection_name:
+        params["collection_name"] = collection_name
     if country:
         params["country"] = country
-    if store:
-        params["store"] = store
     if version:
         params["version"] = version
 
