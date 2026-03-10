@@ -10,6 +10,7 @@ import httpx
 from mcp.server.fastmcp import FastMCP
 
 APPFOLLOW_BASE_URL = "https://api.appfollow.io/api/v2/reviews"
+APPFOLLOW_RATINGS_HISTORY_URL = "https://api.appfollow.io/api/v2/meta/ratings/history"
 DEFAULT_EXT_ID = "1480220328"
 
 mcp = FastMCP(
@@ -55,6 +56,15 @@ def _fetch_page(
 
     with httpx.Client(timeout=30.0) as client:
         response = client.get(APPFOLLOW_BASE_URL, params=params, headers=headers)
+        response.raise_for_status()
+        payload = response.json()
+    return payload
+
+
+def _fetch_json(url: str, *, token: str, params: dict[str, Any]) -> dict[str, Any]:
+    headers = {"X-AppFollow-API-Token": token}
+    with httpx.Client(timeout=30.0) as client:
+        response = client.get(url, params=params, headers=headers)
         response.raise_for_status()
         payload = response.json()
     return payload
@@ -148,6 +158,49 @@ def get_appfollow_reviews_summary(
         "total_reviews_reported": reviews_obj.get("total"),
         "ratings_breakdown": dict(sorted(rating_counts.items())),
         "top_countries": country_counts.most_common(10),
+    }
+
+
+@mcp.tool()
+def get_appfollow_ratings_history(
+    from_date: str,
+    to_date: str,
+    ext_id: str = DEFAULT_EXT_ID,
+    country: str | None = None,
+    store: str | None = None,
+    version: str | None = None,
+) -> dict[str, Any]:
+    """
+    Fetch AppFollow ratings history for an app and date range.
+    """
+    _validate_iso_date(from_date, "from_date")
+    _validate_iso_date(to_date, "to_date")
+
+    token = _read_token()
+    params: dict[str, Any] = {
+        "ext_id": ext_id,
+        "from": from_date,
+        "to": to_date,
+    }
+    if country:
+        params["country"] = country
+    if store:
+        params["store"] = store
+    if version:
+        params["version"] = version
+
+    payload = _fetch_json(APPFOLLOW_RATINGS_HISTORY_URL, token=token, params=params)
+
+    ratings = payload.get("ratings", [])
+    latest = ratings[-1] if ratings else None
+    return {
+        "ext_id": ext_id,
+        "from_date": from_date,
+        "to_date": to_date,
+        "points": len(ratings),
+        "latest": latest,
+        "data": ratings,
+        "raw": payload,
     }
 
 

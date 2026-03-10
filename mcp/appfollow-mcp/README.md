@@ -17,6 +17,7 @@ Endpoint:
 
 - `get_appfollow_reviews(from_date, to_date, ext_id="1480220328", page=1)`
 - `get_appfollow_reviews_summary(from_date, to_date, ext_id="1480220328", max_pages=20)`
+- `get_appfollow_ratings_history(from_date, to_date, ext_id="1480220328", country=None, store=None, version=None)`
 
 Both date args must be `YYYY-MM-DD`.
 
