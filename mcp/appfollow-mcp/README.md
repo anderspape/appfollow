@@ -17,7 +17,10 @@ Endpoint:
 
 - `get_appfollow_reviews(from_date, to_date, ext_id="1480220328", page=1)`
 - `get_appfollow_reviews_summary(from_date, to_date, ext_id="1480220328", max_pages=20)`
-- `get_appfollow_ratings_history(from_date, to_date, ext_id="1480220328", country=None, store=None, version=None)`
+- `get_appfollow_ratings_history(from_date, to_date, ext_id="1480220328", country=None, store=None, version=None, period="daily", score_type="total", offset=0, limit=100, extra_query=None)`
+
+`extra_query` lets you pass raw URL params like:
+- `"sort=asc&timezone=UTC"`
 
 Both date args must be `YYYY-MM-DD`.
 

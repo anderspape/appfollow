@@ -64,9 +64,15 @@ def _fetch_page(
 def _fetch_json(url: str, *, token: str, params: dict[str, Any]) -> dict[str, Any]:
     headers = {"X-AppFollow-API-Token": token}
     with httpx.Client(timeout=30.0) as client:
-        response = client.get(url, params=params, headers=headers)
-        response.raise_for_status()
-        payload = response.json()
+        try:
+            response = client.get(url, params=params, headers=headers)
+            response.raise_for_status()
+            payload = response.json()
+        except httpx.HTTPStatusError as exc:
+            body = exc.response.text.strip()
+            raise ValueError(
+                f"AppFollow API error {exc.response.status_code} for {url}: {body}"
+            ) from exc
     return payload
 
 
@@ -169,6 +175,11 @@ def get_appfollow_ratings_history(
     country: str | None = None,
     store: str | None = None,
     version: str | None = None,
+    period: str = "daily",
+    score_type: str = "total",
+    offset: int = 0,
+    limit: int = 100,
+    extra_query: str | None = None,
 ) -> dict[str, Any]:
     """
     Fetch AppFollow ratings history for an app and date range.
@@ -181,6 +192,10 @@ def get_appfollow_ratings_history(
         "ext_id": ext_id,
         "from": from_date,
         "to": to_date,
+        "period": period,
+        "score_type": score_type,
+        "offset": offset,
+        "limit": limit,
     }
     if country:
         params["country"] = country
@@ -188,6 +203,19 @@ def get_appfollow_ratings_history(
         params["store"] = store
     if version:
         params["version"] = version
+
+    if extra_query:
+        for pair in extra_query.split("&"):
+            if not pair:
+                continue
+            if "=" not in pair:
+                params[pair] = ""
+                continue
+            key, value = pair.split("=", 1)
+            key = key.strip()
+            if not key:
+                continue
+            params[key] = value
 
     payload = _fetch_json(APPFOLLOW_RATINGS_HISTORY_URL, token=token, params=params)
 
