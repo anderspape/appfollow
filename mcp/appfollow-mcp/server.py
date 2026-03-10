@@ -13,8 +13,8 @@ APPFOLLOW_BASE_URL = "https://api.appfollow.io/api/v2/reviews"
 DEFAULT_EXT_ID = "1480220328"
 
 mcp = FastMCP(
-    name="stilla-appfollow-tiimo",
-    instructions="Fetch and summarize Tiimo AppFollow reviews.",
+    name="appfollow-reviews-mcp",
+    instructions="Fetch and summarize AppFollow app store reviews.",
     host=os.getenv("MCP_HOST", "0.0.0.0"),
     port=int(os.getenv("MCP_PORT", os.getenv("PORT", "8080"))),
     streamable_http_path="/mcp",
