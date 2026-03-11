@@ -5,7 +5,7 @@ This package exposes AppFollow review tools over Streamable HTTP.
 ## Run locally
 
 ```bash
-cd "/Users/andersskovpape/Documents/New project/mcp/appfollow-mcp"
+cd "/Users/andersskovpape/Documents/New project/mcp"
 APPFOLLOW_API_TOKEN="YOUR_APPFOLLOW_TOKEN" ./run.sh
 ```
 
@@ -32,7 +32,7 @@ Both date args must be `YYYY-MM-DD`.
 
 ## Deploy with Docker
 
-1. Use folder `mcp/appfollow-mcp` as Docker build context.
+1. Use folder `mcp` as Docker build context.
 2. Set env var `APPFOLLOW_API_TOKEN`.
 3. Expose port `8080` (or set `PORT` via host platform).
 4. Use public endpoint:

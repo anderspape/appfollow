@@ -1,0 +1,125 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+staged_paths=()
+while IFS= read -r -d '' path; do
+  staged_paths+=("$path")
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
+
+if (( ${#staged_paths[@]} == 0 )); then
+  exit 0
+fi
+
+# 1) Block accidental macOS artifacts.
+ds_store_paths=()
+for path in "${staged_paths[@]}"; do
+  if [[ "$path" == */.DS_Store || "$path" == ".DS_Store" ]]; then
+    ds_store_paths+=("$path")
+  fi
+done
+
+if (( ${#ds_store_paths[@]} > 0 )); then
+  echo "ERROR: Commit blocked: .DS_Store files are not allowed."
+  printf '  - %s\n' "${ds_store_paths[@]}"
+  echo "Remove them and try again."
+  exit 1
+fi
+
+# 2) Block copy-style Swift filenames that usually come from Finder/Xcode duplicates.
+copy_style_paths=()
+for path in "${staged_paths[@]}"; do
+  [[ "$path" == *.swift ]] || continue
+  base_lower="$(basename "$path" | tr '[:upper:]' '[:lower:]')"
+
+  if [[ "$base_lower" =~ (\ copy)?\ [0-9]+\.swift$ ]] || [[ "$base_lower" =~ \ copy\.swift$ ]]; then
+    copy_style_paths+=("$path")
+  fi
+done
+
+if (( ${#copy_style_paths[@]} > 0 )); then
+  echo "ERROR: Commit blocked: copy-style Swift filenames detected."
+  printf '  - %s\n' "${copy_style_paths[@]}"
+  echo "Rename/remove these files before committing."
+  exit 1
+fi
+
+# 3) Block duplicate Swift basenames in the Git index (case-insensitive).
+tmp_swift_names="$(mktemp)"
+tmp_swift_pairs="$(mktemp)"
+cleanup_tmp() {
+  rm -f "$tmp_swift_names" "$tmp_swift_pairs"
+}
+trap cleanup_tmp EXIT
+
+while IFS= read -r -d '' tracked_swift; do
+  base_lower="$(basename "$tracked_swift" | tr '[:upper:]' '[:lower:]')"
+  printf '%s\n' "$base_lower" >> "$tmp_swift_names"
+  printf '%s\t%s\n' "$base_lower" "$tracked_swift" >> "$tmp_swift_pairs"
+done < <(git ls-files -z -- '*.swift')
+
+duplicate_names=""
+if [[ -s "$tmp_swift_names" ]]; then
+  duplicate_names="$(sort "$tmp_swift_names" | uniq -d || true)"
+fi
+
+if [[ -n "$duplicate_names" ]]; then
+  echo "ERROR: Commit blocked: duplicate Swift filenames found in repository index."
+  while IFS= read -r name; do
+    [[ -n "$name" ]] || continue
+    echo "  - $name"
+    awk -F '\t' -v n="$name" '$1 == n { print "      " $2 }' "$tmp_swift_pairs"
+  done <<< "$duplicate_names"
+  echo "Use unique basenames for Swift source files."
+  exit 1
+fi
+
+# 4) Format/lint gate.
+# Prefer swift-format when available. Fall back to lightweight whitespace checks.
+staged_swift_or_manifest=()
+should_run_swift_tests=0
+for path in "${staged_paths[@]}"; do
+  if [[ "$path" == *.swift || "$path" == "Package.swift" ]]; then
+    staged_swift_or_manifest+=("$path")
+  fi
+
+  if [[ "$path" == Sources/* || "$path" == Tests/* || "$path" == "Package.swift" ]]; then
+    should_run_swift_tests=1
+  fi
+done
+
+if (( ${#staged_swift_or_manifest[@]} > 0 )); then
+  if command -v swift-format >/dev/null 2>&1; then
+    echo "Running swift-format lint..."
+    swift-format lint "${staged_swift_or_manifest[@]}"
+  else
+    echo "swift-format not found; running whitespace lint fallback..."
+    style_failed=0
+    for path in "${staged_swift_or_manifest[@]}"; do
+      trailing_matches="$(git show ":$path" | grep -nE '[[:blank:]]+$' || true)"
+      if [[ -n "$trailing_matches" ]]; then
+        echo "ERROR: Trailing whitespace in staged file: $path"
+        echo "$trailing_matches"
+        style_failed=1
+      fi
+
+      crlf_matches="$(git show ":$path" | LC_ALL=C grep -n $'\r' || true)"
+      if [[ -n "$crlf_matches" ]]; then
+        echo "ERROR: CRLF line endings in staged file: $path"
+        echo "$crlf_matches"
+        style_failed=1
+      fi
+    done
+
+    if (( style_failed == 1 )); then
+      exit 1
+    fi
+  fi
+fi
+
+if (( should_run_swift_tests == 1 )); then
+  echo "Running swift test..."
+  swift test
+fi

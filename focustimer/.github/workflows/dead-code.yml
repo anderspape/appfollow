@@ -1,0 +1,28 @@
+name: Dead Code
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  periphery:
+    name: Periphery Scan
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+
+      - name: Cache Periphery Build
+        uses: actions/cache@v4
+        with:
+          path: .tools/periphery/.build
+          key: periphery-${{ runner.os }}-${{ hashFiles('Makefile', '.periphery.yml', '.periphery-baseline.json') }}
+          restore-keys: |
+            periphery-${{ runner.os }}-
+
+      - name: Run Dead Code Scan
+        run: make dead-code

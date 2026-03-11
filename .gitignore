@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Local Codex state
+.home/
+
+# FocusTimer (SwiftPM)
+focustimer/.build/
+focustimer/.swiftpm/
+
+# MCP (Python)
+mcp/.venv/
+mcp/__pycache__/
+mcp/*.pyc

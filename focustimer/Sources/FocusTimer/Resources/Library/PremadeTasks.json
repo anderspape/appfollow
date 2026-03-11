@@ -1,0 +1,1838 @@
+[
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Laundry: Wash + dry",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🧺", "title": "Gather laundry + empty pockets" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 8, "emoji": "🎛️", "title": "Sort (colors / delicates / towels)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 4, "emoji": "🧴", "title": "Add detergent + check labels" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🫧", "title": "Start washer" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🌬️", "title": "Move to dryer / hang to dry" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🧽", "title": "Wipe machine rim + leave door open" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-laundry-reset",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧺"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Quick tidy (whole room)",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🗑️", "title": "Trash + recycling" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "📦", "title": "Put things back (surfaces → homes)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🧽", "title": "Wipe key surfaces" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🧺", "title": "Laundry items to basket" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧹"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Kitchen reset",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🍽️", "title": "Clear counters + put food away" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 7, "emoji": "🧼", "title": "Load/unload dishwasher" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🧽", "title": "Wipe counters + stove" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🗑️", "title": "Take out kitchen trash if needed" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🧹", "title": "Quick sweep (high-traffic spots)" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍽️"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Vacuum living room",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "📦", "title": "Clear floors (shoes, cords, toys)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 15, "emoji": "🧹", "title": "Vacuum main areas" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🛋️", "title": "Couch crumbs + under cushions" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 4, "emoji": "✨", "title": "Quick straighten (blankets + pillows)" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧹"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Laundry load: start wash",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🧺", "title": "Sort + choose one load" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 4, "emoji": "🧴", "title": "Pretreat stains (if any)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🎛️", "title": "Select cycle + add detergent" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 2, "emoji": "▶️", "title": "Start washer" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🧽", "title": "Wipe spills + reset area" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 15, "emoji": "📌", "title": "While it runs: do a quick tidy" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🫧"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Fold + put away clothes",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🧺", "title": "Bring clean clothes + clear folding spot" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 10, "emoji": "👕", "title": "Fold by type (tops / bottoms / socks)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🧦", "title": "Pair socks + handle delicates" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 2, "emoji": "🗄️", "title": "Put away (drawers/closet)" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "👕"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Dishwasher reset",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 7, "emoji": "📦", "title": "Unload clean dishes" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 10, "emoji": "🍽️", "title": "Load dirty dishes" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 3, "emoji": "🧽", "title": "Quick rinse + clear sink" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🫧", "title": "Add tablet + start cycle (if full)" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧼"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Declutter desk",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🗑️", "title": "Trash + recycling" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 8, "emoji": "📚", "title": "Stack papers / books neatly" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 7, "emoji": "🔌", "title": "Cable tidy + tech reset" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 6, "emoji": "🧽", "title": "Wipe desk + keyboard area" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 4, "emoji": "✅", "title": "Set up for next session (one priority visible)" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗂️"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Take out trash + recycling",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🗑️", "title": "Collect bins (kitchen/bath/office)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "♻️", "title": "Sort recycling (glass/paper/plastic)" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🚪", "title": "Take bags out + replace liners" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗑️"
+  },
+  {
+    "accentHex": "#A9D1D6",
+    "title" : "Wipe surfaces",
+    "subTasks": [
+      { "accentHex": "#A9D1D6", "durationMinutes": 4, "emoji": "🧴", "title": "Grab spray + cloths" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 9, "emoji": "🧽", "title": "Kitchen counters + table" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 7, "emoji": "🛁", "title": "Bathroom sink + mirror quick pass" },
+      { "accentHex": "#A9D1D6", "durationMinutes": 5, "emoji": "🚪", "title": "High-touch spots (handles, switches)" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Household",
+    "premadeTemplateID": "premade-household-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "✨"
+  },
+
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Relationship check-in",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 3, "emoji": "🧠", "title": "Pick 1–2 topics (what matters today?)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 12, "emoji": "💬", "title": "Talk + listen (no multitasking)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "✅", "title": "Agree on one small next step" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-1",
+    "subTaskTimersEnabled": true,
+    "emoji": "💞"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Call partner",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 2, "emoji": "📍", "title": "Find a quiet spot + headphones" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 15, "emoji": "📞", "title": "Call + catch up" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 3, "emoji": "🗓️", "title": "Confirm next touchpoint" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "📞"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Family catch-up",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 3, "emoji": "🧠", "title": "Who to reach + what to ask" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 18, "emoji": "💬", "title": "Call/message catch-up" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 4, "emoji": "🗓️", "title": "Set next check-in (optional)" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "👨‍👩‍👧‍👦"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Plan date night",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 8, "emoji": "💡", "title": "Pick vibe (cozy / out / active)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 12, "emoji": "📍", "title": "Choose place/activity + backup option" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 7, "emoji": "🗓️", "title": "Lock time + add to calendar" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 3, "emoji": "✅", "title": "Confirm plan by message" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌙"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Send a thoughtful message",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "🧠", "title": "Think of one specific appreciation" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 10, "emoji": "💌", "title": "Write + send (keep it simple)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 20, "emoji": "📸", "title": "Optional: add a photo / memory / plan" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "💌"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Coffee with a friend",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "📍", "title": "Pick place/time options" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 10, "emoji": "💬", "title": "Invite + confirm" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "🗓️", "title": "Add to calendar + travel check" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "☕"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Weekly relationship sync",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "🧠", "title": "What went well this week?" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 12, "emoji": "💬", "title": "Needs + friction (gentle + specific)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 8, "emoji": "✅", "title": "Pick 1 shared priority for next week" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗓️"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Voice note",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "🧠", "title": "Decide who + what’s the point" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 8, "emoji": "🎙️", "title": "Record (keep it under 2–3 min)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 2, "emoji": "✅", "title": "Send" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 15, "emoji": "💬", "title": "Optional: reply to their response" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎙️"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Plan weekend together",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 8, "emoji": "📍", "title": "Brainstorm 3 options (low/med/high energy)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 15, "emoji": "✅", "title": "Choose 1–2 plans + logistics" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 12, "emoji": "🗓️", "title": "Book/confirm + add to calendar" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗓️"
+  },
+  {
+    "accentHex": "#E5C2E1",
+    "title" : "Gratitude note",
+    "subTasks": [
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "🧠", "title": "Pick 1–3 specific moments" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 15, "emoji": "📝", "title": "Write note (short is fine)" },
+      { "accentHex": "#E5C2E1", "durationMinutes": 5, "emoji": "💌", "title": "Send or leave somewhere visible" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Relationship",
+    "premadeTemplateID": "premade-relationship-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🙏"
+  },
+
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Meal break",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "💧", "title": "Pour water" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 7, "emoji": "🥗", "title": "Prepare meal" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 10, "emoji": "🍽️", "title": "Eat slowly (no screens if possible)" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-meal-break",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍽️"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Lunch",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "🥪", "title": "Make/choose lunch" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 8, "emoji": "🍽️", "title": "Eat" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 2, "emoji": "🧼", "title": "Quick clean-up" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🥪"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Hydration break",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "💧", "title": "Refill bottle/glass" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 2, "emoji": "🧂", "title": "Optional: add electrolytes/lemon" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 10, "emoji": "🚶", "title": "Sip + short walk" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "✅", "title": "Set reminder for next drink" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "💧"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Snack prep",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "🧠", "title": "Pick snack (protein + fiber if possible)" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 10, "emoji": "🍎", "title": "Prep/portion" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "🧼", "title": "Clean up + pack for later" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "💧", "title": "Water top-up" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍎"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Make breakfast",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "🧠", "title": "Decide: quick or proper breakfast" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 15, "emoji": "🍳", "title": "Cook/assemble" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 8, "emoji": "🍽️", "title": "Eat" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 2, "emoji": "🧼", "title": "Clean-up" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍳"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Dinner prep",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "📋", "title": "Check plan + ingredients" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 10, "emoji": "🔪", "title": "Chop/prep" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 2, "emoji": "🧼", "title": "Quick tidy as you go" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍲"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Mindful meal",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "📵", "title": "Set phone away" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 15, "emoji": "🍽️", "title": "Eat slowly (taste + breathe)" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 2, "emoji": "📝", "title": "Quick check-in: hunger/fullness" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧘"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Tea break",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 7, "emoji": "🍵", "title": "Make tea" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 15, "emoji": "🪟", "title": "Drink + look away from screens" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "✅", "title": "Return: pick next small step" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍵"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Power nap",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "⏰", "title": "Set alarm + dim lights" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 20, "emoji": "😴", "title": "Nap" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "💧", "title": "Wake + water + light stretch" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "😴"
+  },
+  {
+    "accentHex": "#B0A2CF",
+    "title" : "Stretch + water",
+    "subTasks": [
+      { "accentHex": "#B0A2CF", "durationMinutes": 3, "emoji": "💧", "title": "Refill + drink" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 12, "emoji": "🧘‍♂️", "title": "Stretch (neck/shoulders/hips)" },
+      { "accentHex": "#B0A2CF", "durationMinutes": 5, "emoji": "🚶", "title": "Walk a little" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Human needs",
+    "premadeTemplateID": "premade-human-needs-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧘‍♂️"
+  },
+
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Message catch-up",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 3, "emoji": "🧠", "title": "Decide: reply now vs later" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "💬", "title": "Reply to quick messages" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 2, "emoji": "📌", "title": "Pin/flag anything that needs action" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-message-catchup",
+    "subTaskTimersEnabled": true,
+    "emoji": "💬"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Reply to messages",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 4, "emoji": "📥", "title": "Scan for urgent / time-sensitive" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 12, "emoji": "✉️", "title": "Reply (keep it short)" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 4, "emoji": "🗓️", "title": "Schedule anything that needs planning" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "✉️"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Call a friend",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 3, "emoji": "🧠", "title": "Pick friend + one topic" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 20, "emoji": "📞", "title": "Call" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 2, "emoji": "✅", "title": "Send follow-up if missed" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "📞"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Community check-in",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 8, "emoji": "👀", "title": "Check updates/posts" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 12, "emoji": "💬", "title": "Reply/help one person" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "📌", "title": "Note events/opportunities" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🤝"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Plan a social activity",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "💡", "title": "Pick activity + date options" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "💬", "title": "Message group / invite" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "🗓️", "title": "Confirm + calendar entry" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 5, "emoji": "📍", "title": "Logistics (tickets/booking/route)" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎉"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Voice-note catch-up",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 4, "emoji": "🧠", "title": "Pick person + 1 highlight" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 6, "emoji": "🎙️", "title": "Record + send" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "💬", "title": "Reply to any incoming" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎙️"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Send invites",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 8, "emoji": "📍", "title": "Pick activity + time options" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "📩", "title": "Send invites (short + clear)" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 7, "emoji": "🗓️", "title": "Add tentative calendar hold" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "📩"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Group chat cleanup",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "📌", "title": "Star/pin important messages" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "🔕", "title": "Mute/noise-control (optional)" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "🧹", "title": "Archive/leave irrelevant chats" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧼"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Follow up on plans",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 10, "emoji": "🧠", "title": "List plans needing a nudge" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 20, "emoji": "💬", "title": "Send follow-ups" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 5, "emoji": "🗓️", "title": "Update calendar / notes" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "✅"
+  },
+  {
+    "accentHex": "#B8C5EF",
+    "title" : "Thank-you message",
+    "subTasks": [
+      { "accentHex": "#B8C5EF", "durationMinutes": 5, "emoji": "🧠", "title": "Pick person + specific reason" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 15, "emoji": "💬", "title": "Write + send" },
+      { "accentHex": "#B8C5EF", "durationMinutes": 5, "emoji": "📌", "title": "Optional: note follow-up idea" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Social",
+    "premadeTemplateID": "premade-social-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🙏"
+  },
+
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Inbox admin sprint",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "🎯", "title": "Set target: what “done” means today" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "📥", "title": "Triage (delete/keep/flag)" },
+      { "accentHex": "#6A66DA", "durationMinutes": 8, "emoji": "🧾", "title": "Reply fast + archive" },
+      { "accentHex": "#6A66DA", "durationMinutes": 2, "emoji": "📅", "title": "Schedule anything that needs time" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-inbox-zero",
+    "subTaskTimersEnabled": true,
+    "emoji": "📥"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Inbox zero (mini)",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "🧠", "title": "Pick one inbox only (email OR messages)" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "📥", "title": "Process top → bottom" },
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "✅", "title": "Flag next actions + close inbox" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗂️"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Pay bills",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "📬", "title": "Gather invoices / due dates" },
+      { "accentHex": "#6A66DA", "durationMinutes": 15, "emoji": "💳", "title": "Pay / schedule payments" },
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "🧾", "title": "Save receipts / mark as paid" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "💳"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Calendar cleanup",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🔍", "title": "Scan next 2 weeks for conflicts" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🧹", "title": "Decline/delete outdated holds" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "✅", "title": "Add missing prep/travel buffers" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "📅"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Expense review",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 8, "emoji": "📥", "title": "Collect receipts/transactions" },
+      { "accentHex": "#6A66DA", "durationMinutes": 15, "emoji": "🧾", "title": "Categorize + note anything odd" },
+      { "accentHex": "#6A66DA", "durationMinutes": 12, "emoji": "✅", "title": "Submit/reconcile + file" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧾"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Document filing",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "📥", "title": "Gather downloads / screenshots" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🗂️", "title": "Rename + move to correct folders" },
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "🧹", "title": "Delete duplicates" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗃️"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Task triage",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 8, "emoji": "🧠", "title": "Dump tasks into one list" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🏷️", "title": "Tag: today / soon / later" },
+      { "accentHex": "#6A66DA", "durationMinutes": 7, "emoji": "📅", "title": "Schedule 1–2 next actions" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "✅"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Plan tomorrow",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 8, "emoji": "🔍", "title": "Check calendar + constraints" },
+      { "accentHex": "#6A66DA", "durationMinutes": 12, "emoji": "🎯", "title": "Pick top 3 priorities" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🧩", "title": "Slot tasks into time blocks" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗓️"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Weekly planning",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🔍", "title": "Review last week (what worked?)" },
+      { "accentHex": "#6A66DA", "durationMinutes": 15, "emoji": "🗓️", "title": "Scan upcoming week + deadlines" },
+      { "accentHex": "#6A66DA", "durationMinutes": 10, "emoji": "🎯", "title": "Set 1–3 goals + next actions" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "📅"
+  },
+  {
+    "accentHex": "#6A66DA",
+    "title" : "Forms & paperwork",
+    "subTasks": [
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "📥", "title": "Gather docs + logins" },
+      { "accentHex": "#6A66DA", "durationMinutes": 15, "emoji": "📝", "title": "Fill forms" },
+      { "accentHex": "#6A66DA", "durationMinutes": 5, "emoji": "📎", "title": "Attach files + submit" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Admin",
+    "premadeTemplateID": "premade-admin-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "📝"
+  },
+
+  {
+    "accentHex": "#C95F76",
+    "title" : "Creative hobby burst",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "🎯", "title": "Pick one tiny goal" },
+      { "accentHex": "#C95F76", "durationMinutes": 20, "emoji": "🎨", "title": "Create (no judging)" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "📸", "title": "Save/photo + note next idea" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-creative-burst",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎨"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Sketch practice",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 3, "emoji": "🧰", "title": "Set up tools" },
+      { "accentHex": "#C95F76", "durationMinutes": 12, "emoji": "✏️", "title": "Warm-up lines/shapes" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "👁️", "title": "One focused study (hands/objects)" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "✏️"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Piano session",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "🎼", "title": "Warm-up" },
+      { "accentHex": "#C95F76", "durationMinutes": 15, "emoji": "🎹", "title": "Practice piece/section" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "✅", "title": "Play-through + note next focus" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎹"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Read fiction",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 3, "emoji": "📵", "title": "Phone away + comfy spot" },
+      { "accentHex": "#C95F76", "durationMinutes": 25, "emoji": "📖", "title": "Read" },
+      { "accentHex": "#C95F76", "durationMinutes": 2, "emoji": "🔖", "title": "Bookmark + tiny reflection" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "📖"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Photo walk",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "🎒", "title": "Grab camera/phone + headphones" },
+      { "accentHex": "#C95F76", "durationMinutes": 25, "emoji": "📷", "title": "Walk + take 10 photos" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "⭐", "title": "Pick 1 favorite shot" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "📷"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Knitting session",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 3, "emoji": "🧰", "title": "Set up yarn + pattern" },
+      { "accentHex": "#C95F76", "durationMinutes": 15, "emoji": "🧶", "title": "Knit" },
+      { "accentHex": "#C95F76", "durationMinutes": 2, "emoji": "✅", "title": "Mark progress" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧶"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Play guitar",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "🎵", "title": "Warm-up (chords/scales)" },
+      { "accentHex": "#C95F76", "durationMinutes": 15, "emoji": "🎸", "title": "Practice song/technique" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "✅", "title": "One clean play-through" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎸"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Creative writing",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "💡", "title": "Prompt/idea pick" },
+      { "accentHex": "#C95F76", "durationMinutes": 20, "emoji": "✍️", "title": "Write (no editing)" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "📝", "title": "Quick edit OR note next scene" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "✍️"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Painting study",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "🧰", "title": "Set up materials" },
+      { "accentHex": "#C95F76", "durationMinutes": 25, "emoji": "🖌️", "title": "Study (color/light/composition)" },
+      { "accentHex": "#C95F76", "durationMinutes": 5, "emoji": "📸", "title": "Photo + note one lesson" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🖌️"
+  },
+  {
+    "accentHex": "#C95F76",
+    "title" : "Gaming session",
+    "subTasks": [
+      { "accentHex": "#C95F76", "durationMinutes": 3, "emoji": "🎯", "title": "Set intention (relax / rank / story)" },
+      { "accentHex": "#C95F76", "durationMinutes": 20, "emoji": "🎮", "title": "Play" },
+      { "accentHex": "#C95F76", "durationMinutes": 2, "emoji": "🧘", "title": "Quick reset before next task" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Hobby",
+    "premadeTemplateID": "premade-hobby-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎮"
+  },
+
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Reset break",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🚶", "title": "Walk 5 min" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🧍", "title": "Stretch" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "💧", "title": "Water reset" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-reset-block",
+    "subTaskTimersEnabled": true,
+    "emoji": "☕"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Coffee break",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 3, "emoji": "☕", "title": "Make coffee/tea" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🪟", "title": "Drink + look away from screens" },
+      { "accentHex": "#4A89AE", "durationMinutes": 2, "emoji": "✅", "title": "Pick next small step" }
+    ],
+    "focusMinutes": 10,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "☕"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Walk and reset",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 10, "emoji": "🚶", "title": "Walk" },
+      { "accentHex": "#4A89AE", "durationMinutes": 3, "emoji": "💧", "title": "Water" },
+      { "accentHex": "#4A89AE", "durationMinutes": 2, "emoji": "🧠", "title": "Return: what’s next?" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "🚶"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Desk stretch",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🧍", "title": "Neck/shoulders" },
+      { "accentHex": "#4A89AE", "durationMinutes": 10, "emoji": "🧘", "title": "Back/hips" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "👀", "title": "Eye break (20-20-20)" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧍"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Breathing pause",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🫁", "title": "Box breathing" },
+      { "accentHex": "#4A89AE", "durationMinutes": 15, "emoji": "🧘", "title": "Guided breathing / body scan" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "✅", "title": "Return: write the next action" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌬️"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Tea break",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 4, "emoji": "🍵", "title": "Make tea" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🪟", "title": "Drink + pause" },
+      { "accentHex": "#4A89AE", "durationMinutes": 1, "emoji": "✅", "title": "Back to task" }
+    ],
+    "focusMinutes": 10,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍵"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Screen reset",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "👀", "title": "Look far away (20-20-20)" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🧍", "title": "Stand + posture reset" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "💧", "title": "Water" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "👀"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Posture reset",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 7, "emoji": "🧍‍♀️", "title": "Shoulders/back mobility" },
+      { "accentHex": "#4A89AE", "durationMinutes": 8, "emoji": "🧘‍♂️", "title": "Hip flexor + hamstring stretch" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "✅", "title": "Reset chair/desk position" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧍‍♀️"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Mind break",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "📵", "title": "No input (phone away)" },
+      { "accentHex": "#4A89AE", "durationMinutes": 15, "emoji": "🧠", "title": "Daydream / quiet sit" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "✅", "title": "Return: 1 next step" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧠"
+  },
+  {
+    "accentHex": "#4A89AE",
+    "title" : "Mini stretch",
+    "subTasks": [
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🧘", "title": "Neck + shoulders" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "🧘‍♂️", "title": "Back + hips" },
+      { "accentHex": "#4A89AE", "durationMinutes": 5, "emoji": "💧", "title": "Water" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Breaks",
+    "premadeTemplateID": "premade-breaks-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧘"
+  },
+
+  {
+    "accentHex": "#CEE281",
+    "title" : "Self-care reset",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🫁", "title": "Breathing" },
+      { "accentHex": "#CEE281", "durationMinutes": 10, "emoji": "🧘", "title": "Meditation" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📝", "title": "Journal (1–3 lines)" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-selfcare-evening-reset",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧘"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Breathing reset",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 3, "emoji": "📵", "title": "Phone away" },
+      { "accentHex": "#CEE281", "durationMinutes": 10, "emoji": "🫁", "title": "Breathing practice" },
+      { "accentHex": "#CEE281", "durationMinutes": 2, "emoji": "✅", "title": "Return: name one priority" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌬️"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Journal check-in",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧠", "title": "How am I, really?" },
+      { "accentHex": "#CEE281", "durationMinutes": 12, "emoji": "📝", "title": "Write (freeform)" },
+      { "accentHex": "#CEE281", "durationMinutes": 3, "emoji": "✅", "title": "One small action for later" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "📝"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Skincare routine",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧼", "title": "Cleanse" },
+      { "accentHex": "#CEE281", "durationMinutes": 8, "emoji": "💧", "title": "Moisturize/serum" },
+      { "accentHex": "#CEE281", "durationMinutes": 7, "emoji": "🧴", "title": "Extras (SPF/mask/etc.)" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧘", "title": "Slow breaths while it absorbs" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧴"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Digital detox",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📵", "title": "Turn on Do Not Disturb" },
+      { "accentHex": "#CEE281", "durationMinutes": 20, "emoji": "📖", "title": "Offline activity (read/walk/tidy)" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📝", "title": "Note what you want tomorrow (optional)" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "📵"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Nature break",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 3, "emoji": "🧥", "title": "Shoes/jacket + step outside" },
+      { "accentHex": "#CEE281", "durationMinutes": 10, "emoji": "🌿", "title": "Slow walk / fresh air" },
+      { "accentHex": "#CEE281", "durationMinutes": 2, "emoji": "✅", "title": "Return: one next step" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌿"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Affirmation practice",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧠", "title": "Name today’s challenge" },
+      { "accentHex": "#CEE281", "durationMinutes": 10, "emoji": "💛", "title": "Write 3 supportive lines" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧘", "title": "Read slowly + breathe" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "💛"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Body scan",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📵", "title": "Quiet space + phone away" },
+      { "accentHex": "#CEE281", "durationMinutes": 15, "emoji": "🧠", "title": "Body scan" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📝", "title": "Note: what do I need next?" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧠"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Relaxing bath",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🕯️", "title": "Set mood (light/music)" },
+      { "accentHex": "#CEE281", "durationMinutes": 20, "emoji": "🛁", "title": "Bath/shower + unwind" },
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "🧴", "title": "Moisturize + comfy clothes" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🛁"
+  },
+  {
+    "accentHex": "#CEE281",
+    "title" : "Quiet reflection",
+    "subTasks": [
+      { "accentHex": "#CEE281", "durationMinutes": 5, "emoji": "📵", "title": "No input (phone away)" },
+      { "accentHex": "#CEE281", "durationMinutes": 12, "emoji": "🌙", "title": "Sit quietly / soft music" },
+      { "accentHex": "#CEE281", "durationMinutes": 3, "emoji": "🙏", "title": "One gratitude" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Self care",
+    "premadeTemplateID": "premade-self-care-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌙"
+  },
+
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Health check",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💊", "title": "Take medication" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💧", "title": "Hydration" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🧠", "title": "Body check-in" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-medication-and-water",
+    "subTaskTimersEnabled": true,
+    "emoji": "🩺"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Take medication",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 3, "emoji": "💊", "title": "Take meds" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 3, "emoji": "💧", "title": "Water" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 9, "emoji": "📝", "title": "Optional: log/check refill needs" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "💊"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Hydration check",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💧", "title": "Refill + drink" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "🚶", "title": "Short walk while sipping" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "⏰", "title": "Set next reminder" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "💧"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Recovery stretch",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🫁", "title": "Breathe + gentle warm-up" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 15, "emoji": "🧘‍♀️", "title": "Main stretch routine" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💧", "title": "Water + note how it feels" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧘‍♀️"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Vitamin routine",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🍊", "title": "Take vitamins" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💧", "title": "Water" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 20, "emoji": "📝", "title": "Optional: prep pill box for the week" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍊"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Sleep prep",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🧼", "title": "Night routine basics" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "📵", "title": "Screens down" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "📖", "title": "Wind-down (read/breathe)" }
+    ],
+    "focusMinutes": 15,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🌙"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Doctor follow-up",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "📄", "title": "Gather questions + notes" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "📞", "title": "Call / book appointment" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🗓️", "title": "Add to calendar + reminders" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "📞"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Physio exercises",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🔥", "title": "Warm-up" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 15, "emoji": "🏋️‍♀️", "title": "Exercise set" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🧘", "title": "Cool-down stretch" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🏋️‍♀️"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Health log update",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "📝", "title": "Log symptoms/energy/sleep" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "💊", "title": "Medication + habits check" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "📌", "title": "Note questions for next appointment" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "📝"
+  },
+  {
+    "accentHex": "#DFDBBA",
+    "title" : "Healthy snack",
+    "subTasks": [
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "🧠", "title": "Pick snack (protein + fiber)" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 10, "emoji": "🥜", "title": "Prep + eat" },
+      { "accentHex": "#DFDBBA", "durationMinutes": 5, "emoji": "💧", "title": "Water" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Health",
+    "premadeTemplateID": "premade-health-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🥜"
+  },
+
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Pet care routine",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🥣", "title": "Feed pet" },
+      { "accentHex": "#0D6F73", "durationMinutes": 10, "emoji": "🚶", "title": "Walk pet" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧼", "title": "Clean area" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-care-routine",
+    "subTaskTimersEnabled": true,
+    "emoji": "🐾"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Dog walk",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 3, "emoji": "🎒", "title": "Leash + bags + keys" },
+      { "accentHex": "#0D6F73", "durationMinutes": 15, "emoji": "🚶‍♂️", "title": "Walk" },
+      { "accentHex": "#0D6F73", "durationMinutes": 2, "emoji": "💧", "title": "Refill water bowl after" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🐕"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Feed pet",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🥣", "title": "Measure + feed" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "💧", "title": "Check water" },
+      { "accentHex": "#0D6F73", "durationMinutes": 15, "emoji": "🧸", "title": "Optional: short play / attention" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "🥣"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Refill water bowl",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "💧", "title": "Rinse bowl + refill" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧼", "title": "Wipe area" },
+      { "accentHex": "#0D6F73", "durationMinutes": 20, "emoji": "✅", "title": "Optional: prep extra water/food for later" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "💧"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Play session",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🎯", "title": "Pick game/toy" },
+      { "accentHex": "#0D6F73", "durationMinutes": 25, "emoji": "🧸", "title": "Play" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "💧", "title": "Water + calm down" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧸"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Litter cleanup",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧤", "title": "Gloves + bag ready" },
+      { "accentHex": "#0D6F73", "durationMinutes": 10, "emoji": "🧹", "title": "Scoop + wipe edges" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧼", "title": "Wash hands + reset area" }
+    ],
+    "focusMinutes": 20,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🐈"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Grooming",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧰", "title": "Grab brush/tools" },
+      { "accentHex": "#0D6F73", "durationMinutes": 15, "emoji": "🧼", "title": "Brush/trim basics" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧹", "title": "Clean up fur + reward" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧼"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Training practice",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🥓", "title": "Prep treats + decide skill" },
+      { "accentHex": "#0D6F73", "durationMinutes": 20, "emoji": "🎓", "title": "Train (short reps + breaks)" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "✅", "title": "Note progress + cool down" }
+    ],
+    "focusMinutes": 30,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎓"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Clean pet area",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🧰", "title": "Supplies ready" },
+      { "accentHex": "#0D6F73", "durationMinutes": 20, "emoji": "🧽", "title": "Clean bowls/toys/bedding spot" },
+      { "accentHex": "#0D6F73", "durationMinutes": 10, "emoji": "🧹", "title": "Vacuum/sweep around area" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧽"
+  },
+  {
+    "accentHex": "#0D6F73",
+    "title" : "Vet reminder prep",
+    "subTasks": [
+      { "accentHex": "#0D6F73", "durationMinutes": 10, "emoji": "📄", "title": "List symptoms/questions" },
+      { "accentHex": "#0D6F73", "durationMinutes": 10, "emoji": "📞", "title": "Book/call or confirm time" },
+      { "accentHex": "#0D6F73", "durationMinutes": 5, "emoji": "🗓️", "title": "Add reminders + transport plan" }
+    ],
+    "focusMinutes": 25,
+    "source": "premade",
+    "categoryName": "Pets",
+    "premadeTemplateID": "premade-pets-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🩺"
+  },
+
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Deep work session",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "🧠", "title": "Plan outcomes (1–2 bullets)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 30, "emoji": "🔕", "title": "Focus block (notifications off)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "✅", "title": "Wrap-up notes + next step" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-deep-work",
+    "subTaskTimersEnabled": true,
+    "emoji": "💼"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Pomodoro 1h",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "🎯", "title": "Choose one task + define “done”" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "🍅", "title": "Pomodoro" },
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "☕", "title": "Break" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "🍅", "title": "Pomodoro" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🍅"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Deep work block",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "🧠", "title": "Prep (tabs/docs ready)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 30, "emoji": "🔕", "title": "Deep work" },
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "📝", "title": "Log progress" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "🔕"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Review emails",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "📥", "title": "Triage (delete/flag)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "✉️", "title": "Reply to quick ones" },
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "📅", "title": "Schedule/convert to tasks" }
+    ],
+    "focusMinutes": 45,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "📧"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Project planning",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "🎯", "title": "Define goal + success criteria" },
+      { "accentHex": "#89BDD0", "durationMinutes": 20, "emoji": "🗺️", "title": "Break into steps + risks" },
+      { "accentHex": "#89BDD0", "durationMinutes": 20, "emoji": "📅", "title": "Timeline + next actions" }
+    ],
+    "focusMinutes": 50,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🧭"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Write draft",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "🧠", "title": "Outline (3 bullets)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "✍️", "title": "Write (no editing)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "✅", "title": "Quick polish + save" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "✍️"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Code review",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "📋", "title": "Scan PR description + context" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "🔎", "title": "Review changes (logic + tests)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "💬", "title": "Leave comments + approve/request changes" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "🔎"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Design sprint",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "🎯", "title": "Define problem + constraints" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "🧩", "title": "Sketch/solution explore" },
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "✅", "title": "Pick 1 direction + next steps" }
+    ],
+    "focusMinutes": 45,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎨"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Meeting prep",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "📄", "title": "Review agenda + context" },
+      { "accentHex": "#89BDD0", "durationMinutes": 20, "emoji": "📝", "title": "Write talking points + questions" },
+      { "accentHex": "#89BDD0", "durationMinutes": 15, "emoji": "📎", "title": "Prepare docs/links + decisions needed" },
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "✅", "title": "Set desired outcome" }
+    ],
+    "focusMinutes": 50,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗣️"
+  },
+  {
+    "accentHex": "#89BDD0",
+    "title" : "Documentation pass",
+    "subTasks": [
+      { "accentHex": "#89BDD0", "durationMinutes": 5, "emoji": "🎯", "title": "What doc + who’s it for?" },
+      { "accentHex": "#89BDD0", "durationMinutes": 25, "emoji": "📚", "title": "Update content (bullets > paragraphs)" },
+      { "accentHex": "#89BDD0", "durationMinutes": 10, "emoji": "🔗", "title": "Add links/examples + check formatting" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Work",
+    "premadeTemplateID": "premade-work-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "📚"
+  },
+
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Study sprint",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 20, "emoji": "📖", "title": "Review chapter" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 20, "emoji": "✍️", "title": "Practice questions" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "📝", "title": "Summarize notes" }
+    ],
+    "focusMinutes": 45,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-exam-prep",
+    "subTaskTimersEnabled": true,
+    "emoji": "📚"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Revision block",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "🎯", "title": "Pick topic + goal" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 25, "emoji": "📖", "title": "Review notes/material" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "📝", "title": "Write 5 key points" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-2",
+    "subTaskTimersEnabled": true,
+    "emoji": "🔁"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Practice problems",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "🎯", "title": "Pick problem set" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 30, "emoji": "✍️", "title": "Solve" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "✅", "title": "Check answers + note gaps" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-3",
+    "subTaskTimersEnabled": true,
+    "emoji": "✍️"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Flashcards",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "🃏", "title": "Review old cards" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 25, "emoji": "🧠", "title": "New cards + spaced repetition" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "✅", "title": "Flag hard cards for tomorrow" }
+    ],
+    "focusMinutes": 45,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-4",
+    "subTaskTimersEnabled": true,
+    "emoji": "🃏"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Lecture notes review",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "🔍", "title": "Scan headings + highlights" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 30, "emoji": "🗒️", "title": "Rewrite into a clean summary" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "❓", "title": "Write 5 questions to test yourself" }
+    ],
+    "focusMinutes": 50,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-5",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗒️"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Exam prep",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "📋", "title": "Pick topics by weight/weakness" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 20, "emoji": "🧠", "title": "Targeted review" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "✅", "title": "Decide next practice set" }
+    ],
+    "focusMinutes": 35,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-6",
+    "subTaskTimersEnabled": true,
+    "emoji": "🎓"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Reading sprint",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "🎯", "title": "Set reading goal (pages/sections)" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 30, "emoji": "📖", "title": "Read" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "📝", "title": "3 bullet summary" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-7",
+    "subTaskTimersEnabled": true,
+    "emoji": "⚡"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Essay draft",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "🧠", "title": "Outline (thesis + 3 sections)" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 30, "emoji": "📝", "title": "Draft (no editing)" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "✅", "title": "Save + list next edits" }
+    ],
+    "focusMinutes": 45,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-8",
+    "subTaskTimersEnabled": true,
+    "emoji": "📝"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Quiz practice",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "🎯", "title": "Pick quiz + timer" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 35, "emoji": "🧠", "title": "Take quiz" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "✅", "title": "Review mistakes + note weak areas" }
+    ],
+    "focusMinutes": 50,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-9",
+    "subTaskTimersEnabled": true,
+    "emoji": "✅"
+  },
+  {
+    "accentHex": "#8A7BE9",
+    "title" : "Mind map session",
+    "subTasks": [
+      { "accentHex": "#8A7BE9", "durationMinutes": 5, "emoji": "🎯", "title": "Pick topic + central question" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 25, "emoji": "🗺️", "title": "Build mind map" },
+      { "accentHex": "#8A7BE9", "durationMinutes": 10, "emoji": "🔗", "title": "Add connections + examples" }
+    ],
+    "focusMinutes": 40,
+    "source": "premade",
+    "categoryName": "Study",
+    "premadeTemplateID": "premade-study-10",
+    "subTaskTimersEnabled": true,
+    "emoji": "🗺️"
+  }
+]

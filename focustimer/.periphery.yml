@@ -1,0 +1,13 @@
+format: xcode
+relative_results: true
+exclude_tests: true
+
+# Reduce common false positives in app code.
+retain_public: true
+retain_objc_accessible: true
+retain_assign_only_properties: true
+retain_swift_ui_previews: true
+
+# Keep reporting focused on app sources.
+report_include:
+  - Sources/FocusTimer/**/*.swift
