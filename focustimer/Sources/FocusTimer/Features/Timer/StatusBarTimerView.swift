@@ -3,16 +3,8 @@ import UniformTypeIdentifiers
 import EmojiKit
 
 struct StatusBarTimerView: View {
-    enum PrimaryTab: String, CaseIterable, Identifiable {
-        case today = "Today"
-        case timer = "Focus"
-
-        var id: String { rawValue }
-    }
-
-    @ObservedObject var viewModel: TimerViewModel
+        @ObservedObject var viewModel: TimerViewModel
     @ObservedObject private var navigationBridge: StatusBarNavigationBridge
-    @StateObject private var todayViewModel: TodayViewModel
     private let taskLibraryStore: TaskLibraryStore
     private let premadeTaskCatalog: PremadeTaskCatalog
     var onPreferredSizeChange: ((CGSize) -> Void)?
@@ -52,7 +44,6 @@ struct StatusBarTimerView: View {
     @State private var measuredLibraryContentHeight: CGFloat = 378
     @State private var isShowingTaskLibrary = false
     @State private var isShowingTaskEditor = false
-    @State private var selectedPrimaryTab: PrimaryTab = .timer
     @State private var userTaskLibraryTemplates: [TaskTemplate] = []
     @State private var premadeTaskLibraryTemplates: [TaskTemplate] = []
     @State private var savedPremadeTemplateIDs: Set<String> = []
@@ -68,7 +59,6 @@ struct StatusBarTimerView: View {
     init(
         viewModel: TimerViewModel,
         navigationBridge: StatusBarNavigationBridge,
-        todayViewModel: TodayViewModel,
         taskLibraryStore: TaskLibraryStore = TaskLibraryStore(),
         premadeTaskCatalog: PremadeTaskCatalog = PremadeTaskCatalog(),
         onPreferredSizeChange: ((CGSize) -> Void)? = nil,
@@ -76,7 +66,6 @@ struct StatusBarTimerView: View {
     ) {
         self.viewModel = viewModel
         _navigationBridge = ObservedObject(wrappedValue: navigationBridge)
-        _todayViewModel = StateObject(wrappedValue: todayViewModel)
         self.taskLibraryStore = taskLibraryStore
         self.premadeTaskCatalog = premadeTaskCatalog
         self.onPreferredSizeChange = onPreferredSizeChange
@@ -180,9 +169,6 @@ struct StatusBarTimerView: View {
     }
 
     private var panelHeightContext: StatusBarPanelContext {
-        if activeScreen == .today {
-            return .timerFull(focusMusicEnabled: viewModel.focusMusicEnabled)
-        }
         if activeScreen == .timer && timerFrontDisplayMode == .minified {
             return .timerMinified
         }
@@ -228,14 +214,12 @@ struct StatusBarTimerView: View {
         if isShowingSettings { return .settings }
         if isShowingTaskEditor { return .editTask }
         if isShowingTaskLibrary { return .library }
-        if selectedPrimaryTab == .today { return .today }
         return .timer
     }
 
     private var activeMeasuredView: StatusBarTimerMeasuredView {
         switch activeScreen {
         case .timer: return .timer
-        case .today: return .today
         case .settings: return .settings
         case .editTask: return .editTask
         case .library: return .library
@@ -304,10 +288,6 @@ struct StatusBarTimerView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            if showsPrimaryTabSelector {
-                primaryTabSelector
-            }
-
             ZStack(alignment: .top) {
                 activeScreenContent
                     .readSize { size in
@@ -367,9 +347,6 @@ struct StatusBarTimerView: View {
         .onChange(of: navigationBridge.commandVersion) { _ in
             handleExternalNavigationCommand(navigationBridge.latestCommand)
         }
-        .onChange(of: selectedPrimaryTab) { _ in
-            notifyPreferredSizeChange()
-        }
         .onChange(of: draftTasks.map(\.id)) { taskIDs in
             if let focusedSubtaskID, !taskIDs.contains(focusedSubtaskID) {
                 self.focusedSubtaskID = nil
@@ -411,53 +388,11 @@ struct StatusBarTimerView: View {
         }
     }
 
-    private var showsPrimaryTabSelector: Bool {
-        switch activeScreen {
-        case .timer, .today:
-            return timerFrontDisplayMode == .full
-        case .settings, .editTask, .library:
-            return false
-        }
-    }
-
-    private var primaryTabSelector: some View {
-        HStack(spacing: 0) {
-            ForEach(PrimaryTab.allCases) { tab in
-                Button {
-                    navigate(to: tab == .today ? .today : .timer, animation: primaryNavigationAnimation)
-                } label: {
-                    Text(tab.rawValue)
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundStyle(selectedPrimaryTab == tab ? theme.primaryTextColor : theme.secondaryTextColor)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 7)
-                        .background(
-                            Capsule()
-                                .fill(selectedPrimaryTab == tab ? theme.settingsPillBackground.opacity(1.1) : Color.clear)
-                        )
-                }
-                .buttonStyle(.plain)
-                .statusBarHoverEffect()
-            }
-        }
-        .padding(3)
-        .background(
-            Capsule()
-                .fill(theme.settingsPillBackground.opacity(0))
-        )
-        .overlay(
-            Capsule()
-                .stroke(theme.taskCardStrokeColor.opacity(0.9), lineWidth: 0.75)
-        )
-    }
-
-    @ViewBuilder
+        @ViewBuilder
     private var activeScreenContent: some View {
         switch activeScreen {
         case .timer:
             timerFront
-        case .today:
-            todayBack
         case .settings:
             appSettingsBack
         case .editTask:
@@ -480,14 +415,6 @@ struct StatusBarTimerView: View {
             isShowingTaskLibrary = target == .library
             isShowingSettings = target == .settings
             isShowingTaskEditor = target == .editTask
-            switch target {
-            case .today:
-                selectedPrimaryTab = .today
-            case .timer:
-                selectedPrimaryTab = .timer
-            case .settings, .editTask, .library:
-                break
-            }
         }
     }
 
@@ -664,10 +591,6 @@ struct StatusBarTimerView: View {
                 dismissPickers()
                 navigate(to: .library, animation: drawerNavigationAnimation)
             },
-            onOpenToday: {
-                dismissPickers()
-                navigate(to: .today, animation: primaryNavigationAnimation)
-            },
             onOpenSettings: {
                 navigate(to: .settings, animation: primaryNavigationAnimation)
             },
@@ -709,13 +632,6 @@ struct StatusBarTimerView: View {
         .onAppear {
             viewModel.refreshSpotifyPlaylistMetadataIfNeeded()
         }
-    }
-
-    private var todayBack: some View {
-        TodayView(
-            viewModel: todayViewModel,
-            theme: theme
-        )
     }
 
     private var libraryBack: some View {
@@ -807,8 +723,6 @@ struct StatusBarTimerView: View {
     private func updateMeasuredContentHeight(_ rawHeight: CGFloat, for measuredView: StatusBarTimerMeasuredView) {
         let normalized = max(1, ceil(rawHeight))
         switch measuredView {
-        case .today:
-            return
         case .settings:
             guard abs(measuredSettingsContentHeight - normalized) > 0.5 else { return }
             measuredSettingsContentHeight = normalized

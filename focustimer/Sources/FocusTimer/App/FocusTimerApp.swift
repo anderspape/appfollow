@@ -13,11 +13,6 @@ struct FocusTimerApp: App {
         let settingsStore = SettingsStore()
         let taskLibraryStore = TaskLibraryStore()
         let notificationService = NotificationService()
-        let activitiesService = ActivitiesService()
-        let todayViewModel = TodayViewModel(
-            activitiesService: activitiesService,
-            profileID: TiimoActivitiesConfiguration.default.profileID
-        )
         let timerViewModel = TimerViewModel(
             settingsStore: settingsStore,
             notificationService: notificationService
@@ -28,7 +23,6 @@ struct FocusTimerApp: App {
         _panelController = StateObject(
             wrappedValue: StatusBarPanelController(
                 viewModel: timerViewModel,
-                todayViewModel: todayViewModel,
                 taskLibraryStore: taskLibraryStore
             )
         )

@@ -8,7 +8,6 @@ struct StatusBarTimerFrontCard: View {
     let currentTaskID: UUID?
     let emojiBackgroundColor: Color
     let onOpenLibrary: () -> Void
-    let onOpenToday: () -> Void
     let onOpenSettings: () -> Void
     let onCreateBlankTask: () -> Void
     let onEditTimer: () -> Void

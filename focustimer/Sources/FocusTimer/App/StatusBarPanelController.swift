@@ -16,7 +16,6 @@ final class StatusBarPanelController: NSObject, ObservableObject, NSWindowDelega
     }
 
     private let viewModel: TimerViewModel
-    private let todayViewModel: TodayViewModel
     private let taskLibraryStore: TaskLibraryStore
     private let navigationBridge = StatusBarNavigationBridge()
     private var panel: NSPanel?
@@ -26,11 +25,9 @@ final class StatusBarPanelController: NSObject, ObservableObject, NSWindowDelega
 
     init(
         viewModel: TimerViewModel,
-        todayViewModel: TodayViewModel,
         taskLibraryStore: TaskLibraryStore
     ) {
         self.viewModel = viewModel
-        self.todayViewModel = todayViewModel
         self.taskLibraryStore = taskLibraryStore
         super.init()
 
@@ -81,7 +78,6 @@ final class StatusBarPanelController: NSObject, ObservableObject, NSWindowDelega
             rootView: StatusBarTimerView(
                 viewModel: viewModel,
                 navigationBridge: navigationBridge,
-                todayViewModel: todayViewModel,
                 taskLibraryStore: taskLibraryStore,
                 onPreferredSizeChange: { [weak self] size in
                     self?.updatePanelSizeIfNeeded(size)

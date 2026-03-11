@@ -3,9 +3,8 @@ import SwiftUI
 enum StatusBarTimerScreen: Int {
     case library = 0
     case timer = 1
-    case today = 2
-    case settings = 3
-    case editTask = 4
+    case settings = 2
+    case editTask = 3
 }
 
 enum StatusBarTimerScreenTransitionDirection {
@@ -29,7 +28,6 @@ enum StatusBarTimerScreenTransitionDirection {
 
 enum StatusBarTimerMeasuredView {
     case timer
-    case today
     case settings
     case editTask
     case library
