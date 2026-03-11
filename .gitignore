@@ -12,3 +12,9 @@ focustimer/.swiftpm/
 mcp/.venv/
 mcp/__pycache__/
 mcp/*.pyc
+
+# Local tool checkouts
+focustimer/.tools/
+
+# Local tool checkouts
+focustimer/.tools/
